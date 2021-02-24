@@ -25,3 +25,9 @@
     margin: 4px 2px !important;
     transition: 0.3s !important;
 }
+
+.nav-link:hover {
+    color: white !important;
+    border-radius: 10px;
+    background-color: #EB230F;
+}

@@ -1,4 +1,13 @@
-.bg-colour{
-    background: linear-gradient(to right, #0066ff 0%, #99ccff 100%);
+@font-face {
+    font-family: "DEBROSEE";
+    src: url(../Font/DEBROSEE.ttf);
+    font-style: normal;
+}
 
+.bg-colour {
+    background: linear-gradient(to right, #0066ff 0%, #99ccff 100%);
+}
+
+.headings {
+    font-family: DEBROSEE;
 }

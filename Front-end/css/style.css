@@ -15,3 +15,13 @@
 .menu_colour {
     color: black !important;
 }
+
+.nav-link {
+    color: black;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold !important;
+    text-align: center !important;
+    margin: 4px 2px !important;
+    transition: 0.3s !important;
+}

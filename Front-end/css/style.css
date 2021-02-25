@@ -8,6 +8,10 @@
     background: linear-gradient(to right, #0066ff 0%, #99ccff 100%);
 }
 
+.bg-colour-reverse {
+    background: linear-gradient(to right, #99ccff 0%, #0066ff 100%);
+}
+
 .headings {
     font-family: DEBROSEE;
 }

@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "DEBROSEE";
-    src: url(../Font/DEBROSEE.ttf);
+    font-family: "kabrio";
+    src: url(../Font/kabrio/Kabrio-Abarth-Bold-trial.ttf);
     font-style: normal;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .headings {
-    font-family: DEBROSEE;
+    font-family: kabrio;
 }
 
 .menu_colour {

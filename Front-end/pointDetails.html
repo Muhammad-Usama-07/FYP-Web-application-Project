@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.min.css">
     <title>Smart Vehicle Tracking System</title>
     <link rel="stylesheet" href="./css/style.css">
@@ -28,10 +29,12 @@
 <body>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-colour">
-        <a class="navbar-brand " href="#"><img src="./images/duet_logo.png" width="70" height="53" class="d-inline-block align-top">
+        <a class="navbar-brand " href="#"><img src="./images/duet_logo.png" width="70" height="53"
+                class="d-inline-block align-top">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse mx-5" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
@@ -39,7 +42,7 @@
                     <a class="nav-link  menu_colour" href="index.html">Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu_colour" href="pointDetails.html">Points Details</a>
+                    <a class="nav-link menu_colour" href="pointDetails.html">Route Details</a>
                 </li>
 
                 <li class="nav-item">
@@ -79,203 +82,117 @@
             <hr>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card block_style">
-                    <div class="sevices_icon text-center">
-                        <a href="#!"><img src="./images/Bus/bus1.png" alt="Card image " style="height: 112px;"></a>
+            <div class="col-lg-12 col-md-12">
+                <!-- <div class="col-sm-6 col-md-4 col-lg-12"> -->
+                <div class="card">
+                    <div class="card-header text-center bg-colour-reverse">
+                        <h3>Scheduled Time</h3>
                     </div>
 
-                    <div class="card-body text-center">
-                        <hr>
-                        <p class="card-text" id="services_details">
-                            <h6>Driver Name: Ali Muhammad</h6>
-                        </p>
-                        <hr>
-                        <button class="btn btn-danger" id="readmoreless" onclick="servicesDetails6()"><a href="./PointPages/point1.html" style="color: azure;"><span>Point 01</span></a></button>
+                    <!-- <div class="card-body text-left"> -->
+                    <!-- <p class="card-text">Points will run on time.<br>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century</p> -->
+                    <table class="table-hover table-sm">
+                        <div class="table-responsive">
+                            <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <td class="align-top"></td>
+                                    <th>Point No.</th>
+                                    <th>Driver Details</th>
+                                    <th>Point Route</th>
+                                </tr>
 
-                    </div>
+                            </thead>
+                            <tbody>
+                                <tr class="align-bottom">
+                                    <td></td>
+                                    <th>01</th>
+                                    <td class="align-top">Ali Muhammad</td>
+                                    <td class="align-top">Nothern Bypass, Maymar Mor, Sachal Mor, Chappal Garden,
+                                        Maskan, Safari Park, Kala Board, Nipa, Hassan Square and
+                                        University</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <th>02</th>
+                                    <td>Ghulam Nabi</td>
+                                    <td>Sachal Goth, Gazi Goth, Maran Goth, Safora Goth,
+                                        Mosmiyat,Samama, Nipa and University</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <th>03</th>
+                                    <td>Rasheed Ahmed</td>
+                                    <td>Hospital Chowrangi, Dawood Chowrangi, Babar Market,
+                                        Korangi # 5, Korangi Crossing Qayumabad, Akhtar Colony,
+                                        Kala Pull, FTC Building, Sindhi Muslim Society, Khudad
+                                        Colony and University</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <th>04</th>
+                                    <td>Imran</td>
+                                    <td>Gulshan-e-Hadeed, Steel Town, Razzaqabad, Quaidabad, Malir
+                                        Halt, Shahra-e Faisal, Baloch Colony Pull, Shaheed-e-Milat,
+                                        Jail Chowrangi and University</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <th>05</th>
+                                    <td>Nawaz</td>
+                                    <td>Bhtayabd, Nawaz Sharif Scheme, Kamran Chowrangi, Matka
+                                        Stop, Gulistan-e- Johar, Johar Modd, Alladin Park, Nipa ,
+                                        Hassan Square, New Town and University.
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <th>06</th>
+                                    <td>Wahid</td>
+                                    <td>Naval Chowarngi, Baldia Town, Ruby Mor, Rasheedbad,
+                                        Metrovil, Banaras, Board Office, New Golimar, Gurumandir
+                                        and Universty.</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <th>07</th>
+                                    <td>Mehboob</td>
+                                    <td>Khokhra Park, Saudabad, Jinnah Square, Malir 15, Malir Halt,
+                                        Drig Road, Millennium Mall, Agha Khan, New Town, Jail
+                                        Chowrangi and University</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <th>08</th>
+                                    <td>Zubair</td>
+                                    <td>Shereen Jinah Colony, Kakar Chowrangi, Boat Basin, Punjab
+                                        Chowrangi, PIDC, Shaheen Complex,Jung Press, Regal Plaza,
+                                        Soldier Bazar, Gurumandir and University.
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <th>09</th>
+                                    <td>Iqbal Pasha</td>
+                                    <td>4K Chowrangi, Power House, Nagan Chowrangi, Sakhi
+                                        Hassan, Niaz Manzil, Ziauddin, Karimabad, Lalukhet #10,
+                                        Hassan Square, Jail Chorangi and University.
+                                        </td>
+                                    </tr> 
+                            </tbody>
+                        </table>
+                        </div>
+                    </table>
+                    <!-- </div> -->
+                    <!-- <div class="card-footer text-muted">
+                        Dated: 15/Feb/2021
+                    </div> -->
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card block_style">
-                    <div class="sevices_icon text-center">
-                        <a href="#!"><img src="./images/Bus/bus1.png" alt="Card image " style="height: 112px;"></a>
-                    </div>
-
-                    <div class="card-body text-center">
-                        <hr>
-                        <p class="card-text" id="services_details">
-                            <h6>Driver Name: Aijaz</h6>
-                        </p>
-                        <hr>
-                        <button class="btn btn-danger" id="readmoreless" onclick="servicesDetails6()"><a href="./PointPages/point2.html" style="color: azure;"><span>Point 02</span></a></button>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card block_style">
-                    <div class="sevices_icon text-center">
-                        <a href="#!"><img src="./images/Bus/bus1.png" alt="Card image " style="height: 112px;"></a>
-                    </div>
-
-                    <div class="card-body text-center">
-                        <hr>
-                        <p class="card-text">
-                            <h6>Driver Name: Rashid</h6>
-                        </p>
-                        <hr>
-                        <button class="btn btn-danger" id="readmoreless" onclick="servicesDetails6()"><a href="./PointPages/point3.html" style="color: azure;"><span>Point 03</span></a></button>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card block_style">
-                    <div class="sevices_icon text-center">
-                        <a href="#!"><img src="./images/Bus/bus1.png" alt="Card image " style="height: 112px;"></a>
-                    </div>
-
-                    <div class="card-body text-center">
-                        <hr>
-                        <p class="card-text">
-                            <h6>Driver Name: Imran</h6>
-                        </p>
-                        <hr>
-                        <button class="btn btn-danger" id="readmoreless" onclick="servicesDetails6()"><a href="./PointPages/point4.html" style="color: azure;"><span>Point 04</span></a></button>
-
-                    </div>
-                </div>
-            </div>
-            <!--Point 5-8 section start-->
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card block_style">
-                    <div class="sevices_icon text-center">
-                        <a href="#!"><img src="./images/Bus/bus1.png" alt="Card image " style="height: 112px;"></a>
-                    </div>
-
-                    <div class="card-body text-center">
-                        <hr>
-                        <p class="card-text">
-                            <h6>Driver Name: Nawaz</h6>
-                        </p>
-                        <hr>
-                        <button class="btn btn-danger" id="readmoreless" onclick="servicesDetails6()"><a href="./PointPages/point5.html" style="color: azure;"><span>Point 05</span></a></button>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-3">
-                <div class="card block_style">
-                    <div class="sevices_icon text-center">
-                        <a href="#!"><img src="./images/Bus/bus1.png" alt="Card image " style="height: 112px;"></a>
-                    </div>
-
-                    <div class="card-body text-center">
-                        <hr>
-                        <p class="card-text">
-                            <h6>Driver Name: Wahid</h6>
-                        </p>
-                        <hr>
-                        <button class="btn btn-danger" id="readmoreless" onclick="servicesDetails6()"><a href="./PointPages/point6.html" style="color: azure;"><span>Point 06</span></a></button>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-3">
-                <div class="card block_style">
-                    <div class="sevices_icon text-center">
-                        <a href="#!"><img src="./images/Bus/bus1.png" alt="Card image " style="height: 112px;"></a>
-                    </div>
-
-                    <div class="card-body text-center">
-                        <hr>
-                        <p class="card-text">
-                            <h6>Driver Name: Mehboob</h6>
-                        </p>
-                        <hr>
-                        <button class="btn btn-danger" id="readmoreless" onclick="servicesDetails6()"><a href="./PointPages/point7.html" style="color: azure;"><span>Point 07</span></a></button>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-3">
-                <div class="card block_style">
-                    <div class="sevices_icon text-center">
-                        <a href="#!"><img src="./images/Bus/bus1.png" alt="Card image " style="height: 112px;"></a>
-                    </div>
-
-                    <div class="card-body text-center">
-                        <hr>
-                        <p class="card-text">
-                            <h6>Driver Name: Zubair</h6>
-                        </p>
-                        <hr>
-                        <button class="btn btn-danger" id="readmoreless" onclick="servicesDetails6()"><a href="./PointPages/point8.html" style="color: azure;"><span>Point 08</span></a></button>
-
-                    </div>
-                </div>
-            </div>
-            <!--Point 5-8 section end-->
-            <!--Point 9-11 section start-->
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card block_style">
-                    <div class="sevices_icon text-center">
-                        <a href="#!"><img src="./images/Bus/bus1.png" alt="Card image " style="height: 112px;"></a>
-                    </div>
-
-                    <div class="card-body text-center">
-                        <hr>
-                        <p class="card-text" id="services_details">
-                            <h6>Driver Name: Iqbal Pasha</h6>
-                        </p>
-                        <hr>
-                        <button class="btn btn-danger" id="readmoreless" onclick="servicesDetails6()"><a href="./PointPages/point9.html" style="color: azure;"><span>Point 09</span></a></button>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-3">
-                <div class="card block_style">
-                    <div class="sevices_icon text-center">
-                        <a href="#!"><img src="./images/Bus/bus1.png" alt="Card image " style="height: 112px;"></a>
-                    </div>
-
-                    <div class="card-body text-center">
-                        <hr>
-                        <p class="card-text">
-                            <h6>Driver Name: Asghar</h6>
-                        </p>
-                        <hr>
-                        <button class="btn btn-danger" id="readmoreless" onclick="servicesDetails6()"><a href="./PointPages/point7A.html" style="color: azure;"><span>Point 7A</span></a></button>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-3">
-                <div class="card block_style">
-                    <div class="sevices_icon text-center">
-                        <a href="#!"><img src="./images/Bus/bus1.png" alt="Card image " style="height: 112px;"></a>
-                    </div>
-
-                    <div class="card-body text-center">
-                        <hr>
-                        <p class="card-text">
-                            <h6>Driver Name: Ali</h6>
-                        </p>
-                        <hr>
-                        <button class="btn btn-danger" id="readmoreless" onclick="servicesDetails6()"><a href="./PointPages/point5A.html" style="color: azure;"><span>Point 5A</span></a></button>
-
-                    </div>
-                </div>
-                <!--Point 9-11 section end-->
-
-
-
             </div>
         </div>
     </div>
     <!--All Points details end-->
+
 
 
     <!-- Footer start-->
@@ -291,13 +208,14 @@
                 <div class="col-md-6 mt-md-0 mt-3">
 
                     <!-- Content -->
-                    <h2 class="blackcolor"><img src="./images/duet_logo.png" width="60" height="44" class="img-fluid">Dawood University</h2>
+                    <h2 class="blackcolor"><img src="./images/duet_logo.png" width="60" height="44"
+                            class="img-fluid">Dawood University</h2>
                     <p>
-                        <h4 class="fontcolor">of Engieering and Technology, Karachi</h4>
+                    <h4 class="fontcolor">of Engieering and Technology, Karachi</h4>
 
-                        <br>
-                        <h5 class="fontcolor" style="display: inline;">Address:</h5>
-                        New M. A. Jinnah Rd, Jamshed Quarters Muslimabad, Karachi, Karachi City, Sindh 74800, Pakistan </p>
+                    <br>
+                    <h5 class="fontcolor" style="display: inline;">Address:</h5>
+                    New M. A. Jinnah Rd, Jamshed Quarters Muslimabad, Karachi, Karachi City, Sindh 74800, Pakistan </p>
 
                 </div>
                 <!-- Grid column -->
@@ -334,11 +252,11 @@
                     <!-- Links -->
                     <h5 class="text-uppercase footer_headings " style="color: black !important; ">Contact Us</h5>
                     <p>
-                        <h5 class="fontcolor">Contact numbers:</h5>
-                        Tel No. : +922199231195<br>
-                        <h5 class="fontcolor" style="display: inline;">Email address:</h5> info@duet.edu.pk
-                        <br>
-                        <h5 class="fontcolor" style="display: inline;">Official Website:</h5> www.duet.edu.pk
+                    <h5 class="fontcolor">Contact numbers:</h5>
+                    Tel No. : +922199231195<br>
+                    <h5 class="fontcolor" style="display: inline;">Email address:</h5> info@duet.edu.pk
+                    <br>
+                    <h5 class="fontcolor" style="display: inline;">Official Website:</h5> www.duet.edu.pk
 
                     </p>
 
@@ -359,9 +277,15 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

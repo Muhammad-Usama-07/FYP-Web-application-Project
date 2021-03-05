@@ -50,3 +50,10 @@
 .bnr-icons {
     color: #0066ff;
 }
+
+.fas:hover,
+.fab:hover {
+    color: #0066ff;
+    transition: 0.9s;
+    transform: rotateZ(360deg);
+}

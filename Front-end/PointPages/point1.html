@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../fontawesome-free-5.15.2-web/css/all.min.css">
@@ -34,12 +35,12 @@
         function initMap() {
             // The location of karachi  , 
             const karachi = {
-                lat: 25.109476028518845,
-                lng: 67.16145896653744
+                lat: 24.900552327613134,
+                lng: 67.08157611464205
             };
             // The map, centered at karachi
             const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
+                zoom: 15,
                 center: karachi,
             });
             // The marker, positioned at karchi
@@ -201,7 +202,7 @@
                 <div class="col-md-6 mt-md-0 mt-3">
 
                     <!-- Content -->
-                    <h2 class="blackcolor"><img src="../images/duet_logo.png" width="60" height="44" class="img-fluid">Dawood University</h2>
+                    <h2 class="blackcolor"><img src="./images/duet_logo.png" width="60" height="44" class="img-fluid">Dawood University</h2>
                     <p>
                         <h4 class="fontcolor">of Engieering and Technology, Karachi</h4>
 
@@ -222,13 +223,13 @@
 
                     <ul class="list-unstyled footer_headings ">
                         <li>
-                            <a href="Services.html" style="color: black !important; ">Services</a>
+                            <a href="pointDetails.html" style="color: black !important; ">Route Details</a>
                         </li>
                         <li>
-                            <a href="Projects.html" style="color: black !important; ">Projects</a>
+                            <a href="#availablePoint" style="color: black !important; ">Available points</a>
                         </li>
                         <li>
-                            <a href="About.html" style="color: black !important; ">About us</a>
+                            <a href="#about" style="color: black !important; ">About us</a>
                         </li>
                         <li>
                             <a href="#footer" style="color: black !important; ">Contact us</a>
@@ -244,14 +245,16 @@
                     <!-- Links -->
                     <h5 class="text-uppercase footer_headings " style="color: black !important; ">Contact Us</h5>
                     <p>
-                        <h5 class="fontcolor">Contact numbers:</h5>
-                        Tel No. : +922199231195<br>
+                        Cell No. : 03242300192<br>
                         <h5 class="fontcolor" style="display: inline;">Email address:</h5> info@duet.edu.pk
                         <br>
                         <h5 class="fontcolor" style="display: inline;">Official Website:</h5> www.duet.edu.pk
 
                     </p>
-
+                    <a style="color: white;" href=" https://www.facebook.com/dawooduetkhi/"><i class="fab fa-facebook-square fa-2x"></i></a>
+              <a style="margin-left: 10px; color: white;" href="https://twitter.com/duet1213?lang=en"><i class="fab fa-twitter-square fa-2x"></i></a>
+              <a style="margin-left: 10px; color: white;" href="https://www.picuki.com/followers/dawooduetkarachi"><i class="fab fa-instagram-square fa-2x"></i></a>
+              <a style="margin-left: 10px; color: white;"><i class="fab fa-whatsapp-square fa-2x"></i></a>
                 </div>
                 <!-- Grid column -->
 
@@ -267,7 +270,10 @@
     <!-- Footer end-->
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly" async></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHi5DNU6gX-6rZA7F9ukYrX6ZTT-1FnhA&callback=initMap&libraries=&v=weekly" async></script> -->
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHi5DNU6gX-6rZA7F9ukYrX6ZTT-1FnhA&callback=initMap&libraries=&v=weekly"
+    async></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

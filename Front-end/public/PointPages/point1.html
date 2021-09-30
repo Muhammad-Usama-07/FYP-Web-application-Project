@@ -8,7 +8,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../fontawesome-free-5.15.2-web/css/all.min.css">
     <title>Smart Vehicle Tracking System</title>
     <link rel="stylesheet" href="../css/style.css">
@@ -22,7 +23,7 @@
             background-repeat: no-repeat;
             background-size: 100% 100%;
         }
-        
+
         #map {
             height: 400px;
             /* The height is 400 pixels */
@@ -30,17 +31,18 @@
             /* The width is the width of the web page */
         }
     </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script>
         // Initialize and add the map
         function initMap() {
             // The location of karachi  , 
             const karachi = {
-                lat: 24.900552327613134,
-                lng: 67.08157611464205
+                lat: 24.939420637795916,
+                lng: 67.15667786849717
             };
             // The map, centered at karachi
             const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
+                zoom: 18,
                 center: karachi,
             });
             // The marker, positioned at karchi
@@ -52,6 +54,7 @@
     </script>
     <!--Using FirebaseSDK-->
     <script>
+        /*
         import { initializeApp } from "firebase/app";
         import { getAnalytics } from "firebase/analytics";
         const firebaseConfig = {
@@ -67,16 +70,20 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
+        */
+
     </script>
 </head>
 
 <body>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-colour">
-        <a class="navbar-brand " href="#"><img src="../images/duet_logo.png" width="70" height="53" class="d-inline-block align-top">
+        <a class="navbar-brand " href="#"><img src="../images/duet_logo.png" width="70" height="53"
+                class="d-inline-block align-top">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse mx-5" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
@@ -115,39 +122,39 @@
                         <p class="card-text">
                             <b>Next Station: </b> Civic Center
                             <hr>
-                            <h6 class="text-center"><b><u>Routes Covered</u></b></h6>
-                            <br>
-                            <div class="container">
-                                <div class="row ">
-                                    <div class="col">
-                                        <h6><b>Station Name: </b></h6>
-                                    </div>
-                                    <div class="col">
-                                        <h6><b>Timing:</b>
-                                        </h6>
-                                    </div>
+                        <h6 class="text-center"><b><u>Routes Covered</u></b></h6>
+                        <br>
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col">
+                                    <h6><b>Station Name: </b></h6>
                                 </div>
-                                <div class="row  ">
-                                    <div class="col">
-                                        <ul style="list-style: none;">
-                                            <li>Sachal goath</li>
-                                            <li>Safura</li>
-                                            <li>Mausmiyat</li>
-                                            <li>Karachi University</li>
-                                            <li>Nipa</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col ">
-                                        <ul style="list-style: none;">
-                                            <li>07:55</li>
-                                            <li>08:05</li>
-                                            <li>08:10</li>
-                                            <li>08:20</li>
-                                            <li>08:30</li>
-                                        </ul>
-                                    </div>
+                                <div class="col">
+                                    <h6><b>Timing:</b>
+                                    </h6>
                                 </div>
                             </div>
+                            <div class="row  ">
+                                <div class="col">
+                                    <ul style="list-style: none;">
+                                        <li>Sachal goath</li>
+                                        <li>Safura</li>
+                                        <li>Mausmiyat</li>
+                                        <li>Karachi University</li>
+                                        <li>Nipa</li>
+                                    </ul>
+                                </div>
+                                <div class="col ">
+                                    <ul style="list-style: none;">
+                                        <li>07:55</li>
+                                        <li>08:05</li>
+                                        <li>08:10</li>
+                                        <li>08:20</li>
+                                        <li>08:30</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -162,45 +169,45 @@
                         <p class="card-text">
                             <b>Driver Name: </b>Ali Muhammad
                             <hr>
-                            <h6 class="text-center"><b><u>All Routes</u></b></h6>
-                            <br>
-                            <div class="container">
-                                <div class="row ">
-                                    <div class="col">
-                                        <h6><b>Station Name:</b></h6>
-                                    </div>
-                                    <div class="col">
-                                        <h6><b>Timing:</b>
-                                        </h6>
-                                    </div>
+                        <h6 class="text-center"><b><u>All Routes</u></b></h6>
+                        <br>
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col">
+                                    <h6><b>Station Name:</b></h6>
                                 </div>
-                                <div class="row  ">
-                                    <div class="col">
-                                        <ul style="list-style: none;">
-                                            <li>Sachal goath</li>
-                                            <li>Safura</li>
-                                            <li>Mausmiyat</li>
-                                            <li>Karachi University</li>
-                                            <li>Nipa</li>
-                                            <li>Civic Center</li>
-                                            <li>Jail chorangi</li>
-                                            <li>DUET</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col ">
-                                        <ul style="list-style: none;">
-                                            <li>07:55</li>
-                                            <li>08:05</li>
-                                            <li>08:10</li>
-                                            <li>08:20</li>
-                                            <li>08:30</li>
-                                            <li>08:40</li>
-                                            <li>08:47</li>
-                                            <li>08:55</li>
-                                        </ul>
-                                    </div>
+                                <div class="col">
+                                    <h6><b>Timing:</b>
+                                    </h6>
                                 </div>
                             </div>
+                            <div class="row  ">
+                                <div class="col">
+                                    <ul style="list-style: none;">
+                                        <li>Sachal goath</li>
+                                        <li>Safura</li>
+                                        <li>Mausmiyat</li>
+                                        <li>Karachi University</li>
+                                        <li>Nipa</li>
+                                        <li>Civic Center</li>
+                                        <li>Jail chorangi</li>
+                                        <li>DUET</li>
+                                    </ul>
+                                </div>
+                                <div class="col ">
+                                    <ul style="list-style: none;">
+                                        <li>07:55</li>
+                                        <li>08:05</li>
+                                        <li>08:10</li>
+                                        <li>08:20</li>
+                                        <li>08:30</li>
+                                        <li>08:40</li>
+                                        <li>08:47</li>
+                                        <li>08:55</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -220,13 +227,14 @@
                 <div class="col-md-6 mt-md-0 mt-3">
 
                     <!-- Content -->
-                    <h2 class="blackcolor"><img src="./images/duet_logo.png" width="60" height="44" class="img-fluid">Dawood University</h2>
+                    <h2 class="blackcolor"><img src="./images/duet_logo.png" width="60" height="44"
+                            class="img-fluid">Dawood University</h2>
                     <p>
-                        <h4 class="fontcolor">of Engieering and Technology, Karachi</h4>
+                    <h4 class="fontcolor">of Engieering and Technology, Karachi</h4>
 
-                        <br>
-                        <h5 class="fontcolor" style="display: inline;">Address:</h5>
-                        New M. A. Jinnah Rd, Jamshed Quarters Muslimabad, Karachi, Karachi City, Sindh 74800, Pakistan </p>
+                    <br>
+                    <h5 class="fontcolor" style="display: inline;">Address:</h5>
+                    New M. A. Jinnah Rd, Jamshed Quarters Muslimabad, Karachi, Karachi City, Sindh 74800, Pakistan </p>
 
                 </div>
                 <!-- Grid column -->
@@ -264,15 +272,19 @@
                     <h5 class="text-uppercase footer_headings " style="color: black !important; ">Contact Us</h5>
                     <p>
                         Cell No. : 03242300192<br>
-                        <h5 class="fontcolor" style="display: inline;">Email address:</h5> info@duet.edu.pk
-                        <br>
-                        <h5 class="fontcolor" style="display: inline;">Official Website:</h5> www.duet.edu.pk
+                    <h5 class="fontcolor" style="display: inline;">Email address:</h5> info@duet.edu.pk
+                    <br>
+                    <h5 class="fontcolor" style="display: inline;">Official Website:</h5> www.duet.edu.pk
 
                     </p>
-                    <a style="color: white;" href=" https://www.facebook.com/dawooduetkhi/"><i class="fab fa-facebook-square fa-2x"></i></a>
-              <a style="margin-left: 10px; color: white;" href="https://twitter.com/duet1213?lang=en"><i class="fab fa-twitter-square fa-2x"></i></a>
-              <a style="margin-left: 10px; color: white;" href="https://www.picuki.com/followers/dawooduetkarachi"><i class="fab fa-instagram-square fa-2x"></i></a>
-              <a style="margin-left: 10px; color: white;"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+                    <a style="color: white;" href=" https://www.facebook.com/dawooduetkhi/"><i
+                            class="fab fa-facebook-square fa-2x"></i></a>
+                    <a style="margin-left: 10px; color: white;" href="https://twitter.com/duet1213?lang=en"><i
+                            class="fab fa-twitter-square fa-2x"></i></a>
+                    <a style="margin-left: 10px; color: white;"
+                        href="https://www.picuki.com/followers/dawooduetkarachi"><i
+                            class="fab fa-instagram-square fa-2x"></i></a>
+                    <a style="margin-left: 10px; color: white;"><i class="fab fa-whatsapp-square fa-2x"></i></a>
                 </div>
                 <!-- Grid column -->
 
@@ -289,15 +301,22 @@
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHi5DNU6gX-6rZA7F9ukYrX6ZTT-1FnhA&callback=initMap&libraries=&v=weekly" async></script> -->
-    <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHi5DNU6gX-6rZA7F9ukYrX6ZTT-1FnhA&callback=initMap&libraries=&v=weekly"
-    async></script>
-
+    
+         <script
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBei-XNO7fi9kwA43_7R5QLSVwpHz71NB0&callback=initMap&v=weekly"
+         async
+       ></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

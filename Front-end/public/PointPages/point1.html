@@ -33,6 +33,23 @@
     </style>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script>
+        // Getting data from firebase
+        import { initializeApp } from "firebase/app";
+        import { getAnalytics } from "firebase/analytics";
+        const firebaseConfig = {
+            apiKey: "AIzaSyBmbqgQS4IOZocVxuAYzjBDFbOyVn3MQQw",
+            authDomain: "svtsystem18.firebaseapp.com",
+            projectId: "svtsystem18",
+            storageBucket: "svtsystem18.appspot.com",
+            messagingSenderId: "8859856026",
+            appId: "1:8859856026:web:3c4951b42602a1acf80323",
+            measurementId: "G-H9TDM211MK"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
         // Initialize and add the map
         function initMap() {
             // The location of karachi  , 
@@ -51,27 +68,7 @@
                 map: map,
             });
         }
-    </script>
-    <!--Using FirebaseSDK-->
-    <script>
-        /*
-        import { initializeApp } from "firebase/app";
-        import { getAnalytics } from "firebase/analytics";
-        const firebaseConfig = {
-            apiKey: "AIzaSyBmbqgQS4IOZocVxuAYzjBDFbOyVn3MQQw",
-            authDomain: "svtsystem18.firebaseapp.com",
-            projectId: "svtsystem18",
-            storageBucket: "svtsystem18.appspot.com",
-            messagingSenderId: "8859856026",
-            appId: "1:8859856026:web:3c4951b42602a1acf80323",
-            measurementId: "G-H9TDM211MK"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-        */
-
+        
     </script>
 </head>
 

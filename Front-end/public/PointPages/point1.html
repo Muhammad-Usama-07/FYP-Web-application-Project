@@ -60,12 +60,16 @@
             var starCountRef = firebase.database().ref('coordinates');
             var valuess = starCountRef.on('value', (snapshot) => {
                 const data = snapshot.val();
-                console.log(data.latitude);
-        
+                
+                // check wheather coordinates are recieving or not.
+                //console.log(data.latitude);
+            
+                // Saving Coordinates in an dictionary
                 const karachi = {
                 lat: data.latitude ,
                 lng: data.longnitude
             };
+                // giving Coordinates to the maps
                 const map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 19,
                 center: karachi,

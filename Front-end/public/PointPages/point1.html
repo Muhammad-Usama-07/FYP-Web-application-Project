@@ -57,7 +57,7 @@
             
             // The map, centered at karachi
             firebase.initializeApp(firebaseConfig);
-            var starCountRef = firebase.database().ref('coordinates');
+            var starCountRef = firebase.database().ref('point1');
             var valuess = starCountRef.on('value', (snapshot) => {
                 const data = snapshot.val();
                 
@@ -71,7 +71,7 @@
             };
                 // giving Coordinates to the maps
                 const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 19,
+                zoom: 17,
                 center: karachi,
             });
             // The marker, positioned at karchi
